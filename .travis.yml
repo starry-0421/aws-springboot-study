@@ -15,7 +15,7 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r starry-aws-springboot-study
+  - zip -r starry-aws-springboot-study *
   - mkdir -p deploy
   - mv starry-aws-springboot-study.zip deploy/starry-aws-springboot-study.zip
 
